@@ -1,0 +1,6 @@
+[ 2024-11-16 20:36:22,852 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 20:36:22,853 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 20:36:22,854 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 20:36:22,854 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-16 20:36:22,854 ] 3 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-16 20:36:22,854 ] 8 src.logger.custom_logging - INFO - In funciton

@@ -1,0 +1,9 @@
+[ 2024-11-16 20:32:28,711 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 20:32:28,711 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 20:32:28,712 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 20:32:28,712 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-16 20:32:28,712 ] 3 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-16 20:32:28,712 ] 8 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-16 20:32:28,726 ] 8 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-16 20:32:28,726 ] 75 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-16 20:32:28,727 ] 81 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features

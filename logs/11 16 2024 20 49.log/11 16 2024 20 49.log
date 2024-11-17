@@ -1,0 +1,308 @@
+[ 2024-11-16 20:49:10,327 ] 93 src.logger.custom_logging - ERROR - Error occurred: Found input variables with inconsistent numbers of samples: [2160, 540]
+[ 2024-11-16 20:50:11,401 ] 93 src.logger.custom_logging - ERROR - Error occurred: 
+All the 700 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+130 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'squared_error', 'friedman_mse', 'absolute_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+32 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'absolute_error', 'squared_error', 'poisson'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+71 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'friedman_mse', 'poisson', 'squared_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+52 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'squared_error', 'poisson', 'absolute_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+43 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'poisson', 'squared_error', 'friedman_mse'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'absolute_error', 'squared_error', 'friedman_mse'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+159 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'squared_error', 'friedman_mse', 'absolute_error'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+45 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'squared_error', 'poisson', 'absolute_error'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+59 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'absolute_error', 'squared_error', 'poisson'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+55 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'friedman_mse', 'poisson', 'squared_error'}. Got 'mae' instead.
+
+--------------------------------------------------------------------------------
+14 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'poisson', 'squared_error', 'friedman_mse'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+30 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'absolute_error', 'squared_error', 'friedman_mse'}. Got 'mse' instead.
+
+[ 2024-11-16 20:51:17,711 ] 93 src.logger.custom_logging - ERROR - Error occurred: 
+All the 112 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+57 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'squared_error', 'friedman_mse', 'absolute_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+26 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'squared_error', 'poisson', 'absolute_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+8 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'absolute_error', 'squared_error', 'poisson'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+19 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'friedman_mse', 'poisson', 'squared_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'poisson', 'squared_error', 'friedman_mse'}. Got 'mse' instead.
+
+[ 2024-11-16 20:52:12,579 ] 93 src.logger.custom_logging - ERROR - Error occurred: 
+All the 112 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'poisson', 'squared_error', 'friedman_mse'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+65 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'squared_error', 'friedman_mse', 'absolute_error'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+26 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'friedman_mse', 'absolute_error', 'squared_error', 'poisson'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'poisson', 'absolute_error', 'squared_error', 'friedman_mse'}. Got 'mse' instead.
+
+--------------------------------------------------------------------------------
+14 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 1466, in wrapper
+    estimator._validate_params()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'criterion' parameter of RandomForestRegressor must be a str among {'absolute_error', 'friedman_mse', 'poisson', 'squared_error'}. Got 'mse' instead.
+
+[ 2024-11-16 20:53:01,754 ] 79 src.logger.custom_logging - INFO - Fitting the model
+[ 2024-11-16 20:53:03,857 ] 79 src.logger.custom_logging - INFO - Fitting the model
+[ 2024-11-16 20:53:04,344 ] 79 src.logger.custom_logging - INFO - Fitting the model

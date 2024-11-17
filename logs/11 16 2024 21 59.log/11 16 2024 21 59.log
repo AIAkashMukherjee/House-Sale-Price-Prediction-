@@ -1,0 +1,97 @@
+[ 2024-11-16 21:59:12,235 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-16 21:59:12,236 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:12,237 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:12,237 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:12,237 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-16 21:59:12,240 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-16 21:59:12,286 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-16 21:59:12,286 ] 14 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-16 21:59:12,286 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-16 21:59:12,287 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:12,288 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:12,288 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:12,288 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-16 21:59:12,289 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-16 21:59:12,334 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-16 21:59:12,335 ] 14 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-16 21:59:12,335 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-16 21:59:12,336 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:12,336 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:12,336 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:12,336 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:59:12,336 ] 16 src.logger.custom_logging - ERROR - object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_03_model_trainer.py", line 22, in main
+    model_trainer.initate_model_trainer()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/components/model_trainer.py", line 30, in initate_model_trainer
+    train_data=pd.read_csv(self.config.training_data_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_transformation/final_train.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/main.py", line 13, in run_stage
+    pipeline.main()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_03_model_trainer.py", line 25, in main
+    raise CustomException(e,sys)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/exceptions/expection.py", line 17, in __init__
+    super().__init__(error_msg)
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+[ 2024-11-16 21:59:51,011 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-16 21:59:51,012 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:51,013 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:51,013 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:51,013 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-16 21:59:51,015 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-16 21:59:51,062 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-16 21:59:51,063 ] 14 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-16 21:59:51,063 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-16 21:59:51,064 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:51,065 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:51,065 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:51,065 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-16 21:59:51,065 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-16 21:59:51,065 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-16 21:59:51,080 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-16 21:59:51,080 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-16 21:59:51,081 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-16 21:59:51,238 ] 14 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-16 21:59:51,238 ] 11 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-16 21:59:51,239 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:59:51,239 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:59:51,239 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:59:51,239 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:59:51,262 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-16 21:59:57,322 ] 124 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-16 21:59:59,545 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-16 22:00:00,502 ] 124 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-16 22:00:00,742 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9114914764845969, 'SVR': -0.10865270007595074}
+[ 2024-11-16 22:00:00,742 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9114914764845969
+[ 2024-11-16 22:00:00,759 ] 14 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x

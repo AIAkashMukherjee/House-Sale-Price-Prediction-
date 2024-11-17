@@ -1,0 +1,32 @@
+[ 2024-11-16 21:43:20,105 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:43:20,107 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:43:20,107 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:43:20,107 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:43:20,132 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-16 21:43:26,447 ] 124 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-16 21:43:28,691 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-16 21:43:29,672 ] 124 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-16 21:43:29,916 ] 36 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9129457967865048, 'SVR': -0.10865270007595074}
+[ 2024-11-16 21:43:29,916 ] 45 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9129457967865048
+[ 2024-11-16 21:45:03,964 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:45:03,966 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:45:03,966 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:45:03,967 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:45:04,002 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-16 21:45:09,066 ] 124 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-16 21:45:11,279 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-16 21:45:11,754 ] 124 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-16 21:45:11,999 ] 36 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9086802464782442, 'SVR': -0.10865270007595074}
+[ 2024-11-16 21:45:11,999 ] 45 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9086802464782442
+[ 2024-11-16 21:45:11,999 ] 13 src.logger.custom_logging - ERROR - Error saving model: [Errno 21] Is a directory: 'artifacts/model_trainer'
+[ 2024-11-16 21:45:11,999 ] 50 src.logger.custom_logging - ERROR - Error occurred: object.__init__() takes exactly one argument (the instance to initialize)
+[ 2024-11-16 21:45:34,597 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:45:34,599 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:45:34,599 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:45:34,599 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:45:34,652 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-16 21:45:39,097 ] 124 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-16 21:45:41,328 ] 119 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-16 21:45:41,789 ] 124 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-16 21:45:42,028 ] 36 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9109858071598773, 'SVR': -0.10865270007595074}
+[ 2024-11-16 21:45:42,028 ] 45 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9109858071598773

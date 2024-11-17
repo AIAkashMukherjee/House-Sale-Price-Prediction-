@@ -1,0 +1,9 @@
+pandas
+numpy
+mlflow
+scikit-learn
+matplotlib
+seaborn
+dvc
+streamlit
+-e .

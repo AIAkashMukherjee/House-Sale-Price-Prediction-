@@ -1,0 +1,63 @@
+[ 2024-11-16 21:06:32,367 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:14:11,458 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:14:34,550 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:17:23,354 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:18:24,765 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:18:53,965 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:19:22,928 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:19:44,469 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:21:23,288 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:22:03,449 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:22:03,450 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:22:03,450 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:22:03,450 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:22:53,909 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:22:53,911 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:22:53,911 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:22:53,911 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:22:53,911 ] 54 src.logger.custom_logging - ERROR - Error occurred: string indices must be integers, not 'tuple'
+[ 2024-11-16 21:23:59,255 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:23:59,256 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:23:59,256 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:23:59,256 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:23:59,256 ] 51 src.logger.custom_logging - ERROR - Error occurred: 'str' object has no attribute 'iloc'
+[ 2024-11-16 21:24:34,295 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:24:34,297 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:24:34,297 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:24:34,297 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:24:34,297 ] 51 src.logger.custom_logging - ERROR - Error occurred: 'str' object has no attribute 'iloc'
+[ 2024-11-16 21:25:15,565 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:25:15,567 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:25:15,567 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:25:15,567 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:25:15,605 ] 51 src.logger.custom_logging - ERROR - Error occurred: 'ModelTrainer' object has no attribute 'params'
+[ 2024-11-16 21:27:28,875 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:27:28,876 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:27:28,876 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:27:28,876 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:27:28,919 ] 51 src.logger.custom_logging - ERROR - Error occurred: 'ModelTrainerConfig' object has no attribute 'params'
+[ 2024-11-16 21:39:53,728 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:39:53,730 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:39:53,731 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:39:53,731 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:39:53,764 ] 54 src.logger.custom_logging - ERROR - Error occurred: name 'evaluate_model' is not defined
+[ 2024-11-16 21:40:02,849 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:40:02,851 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:40:02,851 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:40:02,851 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:40:02,881 ] 54 src.logger.custom_logging - ERROR - Error occurred: name 'final_model' is not defined
+[ 2024-11-16 21:40:09,611 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:40:09,612 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:40:09,612 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:40:09,612 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:40:09,639 ] 54 src.logger.custom_logging - ERROR - Error occurred: name 'final_model' is not defined
+[ 2024-11-16 21:40:25,509 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:40:25,510 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:40:25,511 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:40:25,511 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:40:25,536 ] 54 src.logger.custom_logging - ERROR - Error occurred: name 'final_model' is not defined
+[ 2024-11-16 21:43:07,773 ] 31 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-16 21:43:07,775 ] 31 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-16 21:43:07,775 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-16 21:43:07,775 ] 51 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-16 21:43:07,807 ] 51 src.logger.custom_logging - ERROR - Error occurred: name 'final_model' is not defined
