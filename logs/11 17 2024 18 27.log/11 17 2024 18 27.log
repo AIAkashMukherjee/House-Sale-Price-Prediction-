@@ -1,0 +1,39 @@
+[ 2024-11-17 18:27:04,813 ] 28 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage started <<<<<<
+[ 2024-11-17 18:27:04,814 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:27:04,815 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:27:04,815 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:27:04,815 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:27:04,815 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:27:04,815 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:04,830 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:04,830 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:27:04,831 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:27:04,987 ] 31 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:27:17,096 ] 28 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage started <<<<<<
+[ 2024-11-17 18:27:17,097 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:27:17,097 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:27:17,097 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:27:17,097 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:27:17,097 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:27:17,097 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:17,114 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:17,114 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:27:17,115 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:27:17,273 ] 31 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:27:26,777 ] 28 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage started <<<<<<
+[ 2024-11-17 18:27:26,778 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:27:26,779 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:27:26,779 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:27:26,779 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:27:26,779 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:27:26,779 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:26,793 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:27:26,793 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:27:26,794 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:27:26,950 ] 31 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x

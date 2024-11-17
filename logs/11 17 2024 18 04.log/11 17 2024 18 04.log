@@ -1,0 +1,55 @@
+[ 2024-11-17 18:04:17,397 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-17 18:04:17,399 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:04:17,399 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:04:17,399 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:04:17,399 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-17 18:04:17,402 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-17 18:04:17,448 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-17 18:04:17,448 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:04:17,448 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-17 18:04:17,449 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:04:17,450 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:04:17,450 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:04:17,450 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:04:17,450 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:04:17,450 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:04:17,464 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:04:17,464 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:04:17,465 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:04:17,623 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:04:17,623 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-17 18:04:17,624 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:04:17,625 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:04:17,625 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:04:17,625 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 18:04:17,648 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 18:04:23,707 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 18:04:25,848 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 18:04:26,804 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 18:04:27,113 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9105576441397276, 'SVR': -0.10865270007595074}
+[ 2024-11-17 18:04:27,113 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9105576441397276
+[ 2024-11-17 18:04:27,130 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:04:27,130 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage started <<<<<<
+[ 2024-11-17 18:04:27,131 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:04:27,132 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:04:27,132 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:04:27,132 ] 17 src.logger.custom_logging - ERROR - 'MLFLOW_TRACKING_URI'
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/main.py", line 14, in run_stage
+    pipeline.main()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 25, in main
+    raise e
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 20, in main
+    eval_config = config.eval_config()
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/config/configuration.py", line 63, in eval_config
+    mlflow_uri=os.environ['MLFLOW_TRACKING_URI'],
+               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 678, in __getitem__
+KeyError: 'MLFLOW_TRACKING_URI'

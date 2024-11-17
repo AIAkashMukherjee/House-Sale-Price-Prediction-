@@ -1,0 +1,48 @@
+[ 2024-11-17 17:55:55,206 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-17 17:55:55,207 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:55:55,207 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:55:55,208 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:55:55,208 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-17 17:55:55,214 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-17 17:55:55,261 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-17 17:55:55,262 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 17:55:55,262 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-17 17:55:55,262 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:55:55,263 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:55:55,263 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:55:55,263 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 17:55:55,263 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 17:55:55,263 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 17:55:55,276 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 17:55:55,276 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 17:55:55,278 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 17:55:55,433 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 17:55:55,433 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-17 17:55:55,434 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:55:55,435 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:55:55,435 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:55:55,435 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 17:55:55,456 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 17:56:01,412 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 17:56:03,615 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 17:56:04,607 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 17:56:04,846 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9115025211157566, 'SVR': -0.10865270007595074}
+[ 2024-11-17 17:56:04,846 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9115025211157566
+[ 2024-11-17 17:56:04,862 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 17:56:04,862 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage started <<<<<<
+[ 2024-11-17 17:56:04,862 ] 17 src.logger.custom_logging - ERROR - ConfigManager.eval_config() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/main.py", line 14, in run_stage
+    pipeline.main()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 25, in main
+    raise e
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 20, in main
+    eval_config = config.eval_config()
+                  ^^^^^^^^^^^^^^^^^^^^
+TypeError: ConfigManager.eval_config() missing 1 required positional argument: 'self'

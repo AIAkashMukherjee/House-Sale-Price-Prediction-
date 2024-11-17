@@ -1,0 +1,36 @@
+[ 2024-11-17 18:28:10,214 ] 29 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage started <<<<<<
+[ 2024-11-17 18:28:10,215 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:28:10,216 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:28:10,216 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:28:10,216 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 18:28:10,239 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 18:28:16,203 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 18:28:18,387 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 18:28:19,394 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 18:28:19,637 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9114369879719293, 'SVR': -0.10865270007595074}
+[ 2024-11-17 18:28:19,637 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9114369879719293
+[ 2024-11-17 18:28:19,652 ] 32 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:28:28,064 ] 29 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage started <<<<<<
+[ 2024-11-17 18:28:28,065 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:28:28,066 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:28:28,066 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:28:28,066 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 18:28:28,091 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 18:28:34,047 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 18:28:36,188 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 18:28:37,196 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 18:28:37,433 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9127579567078701, 'SVR': -0.10865270007595074}
+[ 2024-11-17 18:28:37,433 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9127579567078701
+[ 2024-11-17 18:28:37,450 ] 32 src.logger.custom_logging - INFO - >>>>>> stage Prepare Base Model stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:28:38,789 ] 29 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage started <<<<<<
+[ 2024-11-17 18:28:38,790 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:28:38,791 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:28:38,791 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:28:38,888 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 18:28:50,736 ] 32 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x

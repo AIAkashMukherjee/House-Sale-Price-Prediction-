@@ -1,0 +1,45 @@
+[ 2024-11-17 18:10:25,642 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-17 18:10:25,644 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:10:25,644 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:10:25,644 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:10:25,644 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-17 18:10:25,646 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-17 18:10:25,692 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-17 18:10:25,692 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:10:25,692 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-17 18:10:25,693 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:10:25,694 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:10:25,694 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:10:25,694 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:10:25,694 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:10:25,694 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:10:25,707 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:10:25,708 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:10:25,708 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:10:25,862 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:10:25,862 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-17 18:10:25,863 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:10:25,863 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:10:25,864 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:10:25,864 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 18:10:25,885 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 18:10:32,009 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 18:10:34,201 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 18:10:35,193 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 18:10:35,456 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9138140948435468, 'SVR': -0.10865270007595074}
+[ 2024-11-17 18:10:35,456 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9138140948435468
+[ 2024-11-17 18:10:35,473 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:10:35,473 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage started <<<<<<
+[ 2024-11-17 18:10:35,474 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:10:35,475 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:10:35,475 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:10:35,510 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 18:10:47,595 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x

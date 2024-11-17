@@ -26,3 +26,8 @@ class ModelTrainerConfig:
     training_data_path: Path
     testing_data_path: Path
     
+@dataclass(frozen=True)
+class EvaluationConfig:
+    model_path:Path
+    test_data:Path
+    mlflow_uri: str    

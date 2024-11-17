@@ -1,0 +1,15 @@
+[ 2024-11-17 17:20:58,771 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:20:58,774 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:20:58,774 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:21:25,494 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:21:25,495 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:21:25,496 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:22:21,063 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:22:21,065 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:22:21,065 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:22:38,296 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:22:38,297 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:22:38,297 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:23:04,589 ] 33 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:23:04,591 ] 33 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:23:04,591 ] 53 src.logger.custom_logging - INFO - created directory at: artifacts

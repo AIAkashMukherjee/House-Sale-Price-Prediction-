@@ -1,0 +1,21 @@
+[ 2024-11-17 17:38:25,806 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:38:25,807 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:38:25,808 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:38:25,842 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 17:39:53,780 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:39:53,782 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:39:53,782 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:39:53,847 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 17:47:59,882 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:47:59,884 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:47:59,885 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:47:59,934 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 17:49:55,022 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:49:55,023 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:49:55,024 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:49:55,069 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 17:50:13,136 ] 870 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /AIAkashMukherjee/House-Sale-Price-Prediction-.mlflow/api/2.0/mlflow/runs/create
+[ 2024-11-17 17:51:57,806 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 17:51:57,807 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 17:51:57,807 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 17:51:57,854 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json

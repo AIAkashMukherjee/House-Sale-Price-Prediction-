@@ -1,6 +1,6 @@
 from src.constants import *
 from src.utils.utlis import *
-from src.entity.config_entity import DataIngestionConfig,DataTransformationConfig,ModelTrainerConfig
+from src.entity.config_entity import DataIngestionConfig,DataTransformationConfig,ModelTrainerConfig,EvaluationConfig
 
 
 class ConfigManager:
@@ -54,3 +54,16 @@ class ConfigManager:
 
         )    
         return model_trainer_config
+    
+
+    def eval_config(self):
+        os.environ['MLFLOW_TRACKING_URI'] = "https://dagshub.com/AIAkashMukherjee/House-Sale-Price-Prediction-.mlflow"
+        os.environ['MLFLOW_TRACKING_USERNAME']='AIAkashMukherjee'
+        os.environ['MLFLOW_TRACKING_PASSWORD'] = '588b7f4279c32acc1263e6c2cfbbd743a7f77705'
+        eval_confg=EvaluationConfig(
+            model_path="artifacts/model_trainer/model.pkl",
+            test_data="artifacts/data_transformation/final_test.csv",
+            mlflow_uri=os.environ['MLFLOW_TRACKING_URI'],
+           
+        )    
+        return eval_confg

@@ -1,0 +1,76 @@
+[ 2024-11-17 18:07:57,389 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage started <<<<<<
+[ 2024-11-17 18:07:57,390 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:07:57,390 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:07:57,391 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:07:57,391 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_ingestion
+[ 2024-11-17 18:07:57,393 ] 28 src.logger.custom_logging - INFO - Data Ingestion Started
+[ 2024-11-17 18:07:57,439 ] 39 src.logger.custom_logging - INFO - Data Ingestion finished
+[ 2024-11-17 18:07:57,440 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:07:57,440 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage started <<<<<<
+[ 2024-11-17 18:07:57,441 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:07:57,442 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:07:57,442 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:07:57,442 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/data_transformation
+[ 2024-11-17 18:07:57,442 ] 16 src.logger.custom_logging - INFO - Data Transformation started
+[ 2024-11-17 18:07:57,442 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:07:57,458 ] 21 src.logger.custom_logging - INFO - In funciton
+[ 2024-11-17 18:07:57,459 ] 88 src.logger.custom_logging - INFO - Splitting train data into dependent and independent features
+[ 2024-11-17 18:07:57,462 ] 94 src.logger.custom_logging - INFO - Splitting test data into dependent and independent features
+[ 2024-11-17 18:07:57,628 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:07:57,628 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage started <<<<<<
+[ 2024-11-17 18:07:57,629 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:07:57,630 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:07:57,630 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:07:57,630 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts/model_trainer
+[ 2024-11-17 18:07:57,653 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for Random Forest
+[ 2024-11-17 18:08:03,817 ] 136 src.logger.custom_logging - INFO - Best parameters for Random Forest: {}
+[ 2024-11-17 18:08:05,994 ] 131 src.logger.custom_logging - INFO - Starting RandomizedSearchCV for SVR
+[ 2024-11-17 18:08:06,969 ] 136 src.logger.custom_logging - INFO - Best parameters for SVR: {}
+[ 2024-11-17 18:08:07,208 ] 49 src.logger.custom_logging - INFO - Model Report: {'Random Forest': 0.9116533076314739, 'SVR': -0.10865270007595074}
+[ 2024-11-17 18:08:07,208 ] 58 src.logger.custom_logging - INFO - Best model found, Model Name is Random Forest, Accuracy Score: 0.9116533076314739
+[ 2024-11-17 18:08:07,225 ] 15 src.logger.custom_logging - INFO - >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x
+[ 2024-11-17 18:08:07,225 ] 12 src.logger.custom_logging - INFO - >>>>>> stage Model Evaluation stage started <<<<<<
+[ 2024-11-17 18:08:07,226 ] 45 src.logger.custom_logging - INFO - yaml file: config/config.yaml loaded successfully
+[ 2024-11-17 18:08:07,227 ] 45 src.logger.custom_logging - INFO - yaml file: params.yaml loaded successfully
+[ 2024-11-17 18:08:07,227 ] 65 src.logger.custom_logging - INFO - created directory at: artifacts
+[ 2024-11-17 18:08:07,260 ] 26 src.logger.custom_logging - INFO - json file saved at: scores.json
+[ 2024-11-17 18:08:07,920 ] 17 src.logger.custom_logging - ERROR - API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+Traceback (most recent call last):
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/main.py", line 14, in run_stage
+    pipeline.main()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 25, in main
+    raise e
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/pipeline/stage_04_model_evaluation.py", line 22, in main
+    evaluation.evaluation()
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/components/model_evalutaion.py", line 44, in evaluation
+    self.log_with_mlflow(model)
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/src/components/model_evalutaion.py", line 31, in log_with_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/tracking/fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/tracking/client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/client.py", line 168, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/store/tracking/rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akashmukherjee/Programming/Practise ML/House_price_prediction/my_env/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''

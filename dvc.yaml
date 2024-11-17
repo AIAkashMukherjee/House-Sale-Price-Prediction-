@@ -1,8 +1,8 @@
 stages:
   data_ingestion:
-    cmd: python src/pipeline/stage_01_data_ingestion_pipe.py
+    cmd: python src/pipeline/stage_01_data_ingest_pipe.py
     deps:
-      - src/pipeline/stage_01_data_ingestion_pipe.py
+      - src/pipeline/stage_01_data_ingest_pipe.py
       - config/config.yaml
     outs:
       - artifacts/data_ingestion/AmesHousing.csv
@@ -27,12 +27,12 @@ stages:
       - artifacts/data_transformation/final_train.csv
       - src/pipeline/stage_03_model_Trainer.py
     params:
-      - model_trainer.RandomForestRegressor.n_estimators
-      - model_trainer.RandomForestRegressor.max_depth
-      - model_trainer.RandomForestRegressor.min_samples_split
-      - model_trainer.RandomForestRegressor.min_samples_leaf
-      - model_trainer.RandomForestRegressor.max_features
-      - model_trainer.RandomForestRegressor.criterion
+      - RandomForestRegressor.n_estimators
+      - RandomForestRegressor.max_depth
+      - RandomForestRegressor.min_samples_split
+      - RandomForestRegressor.min_samples_leaf
+      - RandomForestRegressor.max_features
+      - RandomForestRegressor.criterion
     outs:
       - artifacts/model_trainer/model.pkl
 

@@ -1,0 +1,125 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/pipeline/stage_01_data_ingest_pipe.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: f0796832616e3db2f2f727c6574111d5
+      size: 855
+    - path: src/pipeline/stage_01_data_ingest_pipe.py
+      hash: md5
+      md5: 881cab6a62a48a959b68e8459a5bc005
+      size: 1105
+    outs:
+    - path: artifacts/data_ingestion/AmesHousing.csv
+      hash: md5
+      md5: e51b90d390c1370073753970e322601f
+      size: 963738
+    - path: artifacts/data_ingestion/test.csv
+      hash: md5
+      md5: ff8d00f38ac69729d4cca8754f3c8385
+      size: 197512
+    - path: artifacts/data_ingestion/train.csv
+      hash: md5
+      md5: ef2199e20d16b99feae2f2ed728f7965
+      size: 788318
+  data_transformation:
+    cmd: python src/pipeline/stage_02_data_transform.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: f0796832616e3db2f2f727c6574111d5
+      size: 855
+    - path: src/pipeline/stage_02_data_transform.py
+      hash: md5
+      md5: 33d88ba020b4d162014cd258a54aac66
+      size: 1159
+    outs:
+    - path: artifacts/data_transformation/final_test.csv
+      hash: md5
+      md5: 8241ed1b82444aae3b614e36386d639b
+      size: 765237
+    - path: artifacts/data_transformation/final_train.csv
+      hash: md5
+      md5: 1ff78614fdacb9f0831a21af9afa0e8e
+      size: 3066442
+    - path: artifacts/data_transformation/preprocessor.pkl
+      hash: md5
+      md5: b2847328ad47b13f2bacd42198f874f6
+      size: 9908
+  model_trainer:
+    cmd: python src/pipeline/stage_03_model_trainer.py
+    deps:
+    - path: artifacts/data_transformation/final_test.csv
+      hash: md5
+      md5: 8241ed1b82444aae3b614e36386d639b
+      size: 765237
+    - path: artifacts/data_transformation/final_train.csv
+      hash: md5
+      md5: 1ff78614fdacb9f0831a21af9afa0e8e
+      size: 3066442
+    - path: config/config.yaml
+      hash: md5
+      md5: f0796832616e3db2f2f727c6574111d5
+      size: 855
+    - path: src/pipeline/stage_03_model_Trainer.py
+      hash: md5
+      md5: 58bced0b5b2b16072bbc5de046553f00
+      size: 1043
+    params:
+      params.yaml:
+        RandomForestRegressor.criterion:
+        - squared_error
+        - absolute_error
+        - friedman_mse
+        RandomForestRegressor.max_depth:
+        - 10
+        - 20
+        - 30
+        - None
+        RandomForestRegressor.max_features:
+        - auto
+        - sqrt
+        - log2
+        RandomForestRegressor.min_samples_leaf:
+        - 1
+        - 2
+        - 4
+        RandomForestRegressor.min_samples_split:
+        - 2
+        - 5
+        - 10
+        RandomForestRegressor.n_estimators:
+        - 100
+        - 200
+        - 300
+    outs:
+    - path: artifacts/model_trainer/model.pkl
+      hash: md5
+      md5: 8224f3e70558d0f5bb5a7a2d992ba27f
+      size: 20441521
+  model_evaluation:
+    cmd: python src/pipeline/stage_04_model_evaluation.py
+    deps:
+    - path: artifacts/data_transformation/final_test.csv
+      hash: md5
+      md5: 8241ed1b82444aae3b614e36386d639b
+      size: 765237
+    - path: artifacts/model_trainer/model.pkl
+      hash: md5
+      md5: 8224f3e70558d0f5bb5a7a2d992ba27f
+      size: 20441521
+    - path: config/config.yaml
+      hash: md5
+      md5: f0796832616e3db2f2f727c6574111d5
+      size: 855
+    - path: src/pipeline/stage_04_model_evaluation.py
+      hash: md5
+      md5: 390a7db35f57dd5dc548944abac474ab
+      size: 984
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 71ead11ab5329f9f0b1081c13ef866d2
+      size: 38

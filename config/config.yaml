@@ -19,4 +19,7 @@ model_trainer:
   train_model_path: artifacts/model_trainer/model.pkl
   training_data_path: artifacts/data_transformation/final_train.csv
   testing_data_path: artifacts/data_transformation/final_test.csv
+
+model_evaluation:
+    
     
